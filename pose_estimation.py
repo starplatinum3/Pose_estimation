@@ -10,7 +10,7 @@ mpDraw = mp.solutions.drawing_utils
 #cap = cv2.VideoCapture(0)
 cap = cv2.VideoCapture('videos/a.mp4')
 pTime = 0
-
+# 这个可以用
 while True:
     success, img = cap.read()
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

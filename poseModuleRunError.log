@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "D:\project\python_project\ALBERT\venv\lib\site-packages\IPython\core\interactiveshell.py", line 3441, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-2-b47180b77e0f>", line 1, in <module>
+    runfile('G:/project/pythonProj/pose/Pose_estimation-main/PoseModule.py', wdir='G:/project/pythonProj/pose/Pose_estimation-main')
+  File "G:\config\.idea2019.2.4\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "G:\config\.idea2019.2.4\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "G:/project/pythonProj/pose/Pose_estimation-main/PoseModule.py", line 64, in <module>
+    main()
+  File "G:/project/pythonProj/pose/Pose_estimation-main/PoseModule.py", line 46, in main
+    detector = PoseDetector()
+  File "G:/project/pythonProj/pose/Pose_estimation-main/PoseModule.py", line 18, in __init__
+    self.pose = self.mpPose.Pose(self.mode, self.upBody, self.smooth, self.detectionCon, self.trackCon)
+  File "D:\project\python_project\ALBERT\venv\lib\site-packages\mediapipe\python\solutions\pose.py", line 166, in __init__
+    outputs=['pose_landmarks', 'pose_world_landmarks', 'segmentation_mask'])
+  File "D:\project\python_project\ALBERT\venv\lib\site-packages\mediapipe\python\solution_base.py", line 260, in __init__
+    for name, data in (side_inputs or {}).items()
+  File "D:\project\python_project\ALBERT\venv\lib\site-packages\mediapipe\python\solution_base.py", line 260, in <dictcomp>
+    for name, data in (side_inputs or {}).items()
+  File "D:\project\python_project\ALBERT\venv\lib\site-packages\mediapipe\python\solution_base.py", line 513, in _make_packet
+    return getattr(packet_creator, 'create_' + packet_data_type.value)(data)
+TypeError: create_bool(): incompatible function arguments. The following argument types are supported:
+    1. (arg0: bool) -> mediapipe.python._framework_bindings.packet.Packet
+Invoked with: 0.5
